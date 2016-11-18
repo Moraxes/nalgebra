@@ -25,6 +25,8 @@ abstract_algebra = [ "algebra" ]
 rustc-serialize = "0.3.*"
 rand = "0.3.*"
 num  = "0.1.*"
+serde = "=0.8.16"
+serde_derive = "=0.8.16"
 
 [dependencies.generic-array]
 optional = true

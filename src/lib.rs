@@ -76,9 +76,13 @@ an optimized set of tools for computer graphics and physics. Those features incl
 #![warn(missing_docs)]
 #![doc(html_root_url = "http://nalgebra.org/doc")]
 
+#![feature(proc_macro)]
+
 extern crate rustc_serialize;
 extern crate rand;
 extern crate num;
+extern crate serde;
+#[macro_use] extern crate serde_derive;
 
 #[cfg(feature="generic_sizes")]
 extern crate generic_array;

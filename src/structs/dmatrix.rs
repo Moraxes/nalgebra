@@ -16,7 +16,7 @@ use quickcheck::{Arbitrary, Gen};
 
 
 /// Matrix with dimensions unknown at compile-time.
-#[derive(Eq, PartialEq, Clone)]
+#[derive(Eq, PartialEq, Clone, Serialize, Deserialize)]
 pub struct DMatrix<N> {
     nrows: usize,
     ncols: usize,
